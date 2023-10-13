@@ -1,0 +1,27 @@
+Algorithme CompterMotsEtVoyelles
+ VAR
+    nombre_voyelles:INTEGER
+    nombre_mots:INTEGER
+  BEGIN  
+    
+  WRITE
+    Write("Entrez une phrase se terminant par un point : ")
+  Read()
+
+    FOR chaque caractere dans phrase DO
+        
+        IF CaractereEnMinuscules(caractere) est dans "aeiou" THEN
+            nombre_voyelles : nombre_voyelles + 1
+        END IF
+
+        
+        IF caractere est " " THEN
+            nombre_mots <- nombre_mots + 1
+        END IF
+    END FOR
+    
+    nombre_mots <- nombre_mots + 1
+
+    Write("Nombre de mots : ", nombre_mots)
+    Write("Nombre de voyelles : ", nombre_voyelles)
+END Algorithme

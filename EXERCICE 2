@@ -1,0 +1,26 @@
+Algorithme SommeDesElementsDistincts
+    VAR
+    ensemble1:INTEGER
+    ensemble2:INTEGER
+    sum:INTEGER
+
+BEGIN
+  
+    FOR x in ensemble1 DO
+     Vérifiez IF x n'est pas dans ensemble2
+        IF x is not in array 2 THEN
+            sum <- sum + x
+        END IF
+    END FOR
+
+
+    FOR chaque y dans ensemble2 DO
+        Vérifiez si y n'est pas dans ensemble1
+        IF y n'est pas dans ensemble1 THEN
+            SUM <- SUM + y
+        END IF
+    END FOR
+
+    Write la somme des éléments distincts
+    Write("Somme des éléments distincts : ", SUM)
+END Algorithme
